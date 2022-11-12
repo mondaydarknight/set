@@ -68,7 +68,7 @@ func (s *Set) Difference(t *Set) *Set {
 				duplicate = true
 			}
 		}
-		if duplicate {
+		if !duplicate {
 			diff.Add(e)
 		}
 	}
